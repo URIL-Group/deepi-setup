@@ -30,15 +30,13 @@ sudo apt-get -y install python3-virtualenv
 sudo apt-get -y install python3-picamera
 
 # Install pip
-sudo apt-get install python3-pip
+sudo apt-get -y install python3-pip
 python -m pip install --upgrade pip setuptools wheel build
 
-# TODO: Downlaod DEEPi-Python module
+# Downlaod DEEPi-Python module
 git clone git@github.com:URIL-Group/deepi-python.git
 python -m build 
 python -m pip install ws4py flask
-# TODO: install deepi-python 
-
 # TODO: Set up deployment service
 
 # TODO: Set up configuration
