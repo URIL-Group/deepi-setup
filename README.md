@@ -8,6 +8,7 @@ To install everything, clone the project onto the RPi, and
 run the set up script.
 
 ```
+sudo apt-get -y update
 sudo apt-get -y install git
 git clone https://github.com/URIL-Group/deepi-setup.git
 cd deepi-setup/
@@ -20,6 +21,11 @@ complete the process.
 ```
 sudo reboot now
 ```
+
+Set up via `sudo raspi-config`
+
+1. Enable Legacy Camera
+2. Expand filesystem
 
 ## Usage ##
 

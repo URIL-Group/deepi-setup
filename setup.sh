@@ -17,6 +17,7 @@ sudo apt-get -y upgrade
 sudo apt-get -y autoremove
 
 # Install supporting packages
+sudo apt-get -y install emacs-nox
 sudo apt-get -y install proftpd-basic # TODO: check out pureftp
 # https://www.raspberrypi.com/documentation/computers/remote-access.html
 sudo apt-get -y install ntp
