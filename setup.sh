@@ -6,6 +6,7 @@
 sudo touch /boot/ssh
 
 # Enable camera
+# FIXME: I do not think the camera enable is working w/ legacy camera
 sudo sh -c "echo '[all] # Enabling camera' >> /boot/config.txt"
 sudo sh -c "echo 'start_x=1' >> /boot/config.txt"
 sudo sh -c "echo 'gpu_mem=256' >> /boot/config.txt"
@@ -36,8 +37,9 @@ python -m pip install --upgrade pip setuptools wheel build
 
 # Downlaod DEEPi-Python module
 git clone git@github.com:URIL-Group/deepi-python.git
-python -m build 
+#python -m build 
 python -m pip install ws4py flask
+sudo apt-get install python3-yaml
 # TODO: Set up deployment service
 
 # TODO: Set up configuration
